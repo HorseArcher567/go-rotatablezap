@@ -1,2 +1,2 @@
-# go-rotateblezap
-A wrapper of rotatefiles and zap.
+# go-rotatablezap
+A wrapper of rotatafiles and zap.
