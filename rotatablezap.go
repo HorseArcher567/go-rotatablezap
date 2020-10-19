@@ -28,7 +28,7 @@ func New(filename string, options ...rotatefiles.Option) *zap.Logger {
 	})
 
 	infoLevel := zap.LevelEnablerFunc(func(level zapcore.Level) bool {
-		return level <= zapcore.InfoLevel
+		return level >= zapcore.InfoLevel
 	})
 
 	errorLevel := zap.LevelEnablerFunc(func(level zapcore.Level) bool {
