@@ -5,6 +5,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/artisan-yp/go-rotatefiles"
 	"go.uber.org/zap"
 )
 
@@ -13,7 +14,7 @@ func TestHelloWorld(t *testing.T) {
 }
 
 func TestWriteSomthing(t *testing.T) {
-	logger := New("TestServer")
+	logger := New("TestServer", rotatefiles.WithRotateSize(1024*1024*256))
 	sugar := logger.Sugar()
 
 	sugar.Debug("This is my debug log.")

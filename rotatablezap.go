@@ -35,8 +35,8 @@ func New(filename string, options ...rotatefiles.Option) *zap.Logger {
 		return level >= zapcore.WarnLevel
 	})
 
-	infoWriter := getWriter(filename + "_info")
-	errorWriter := getWriter(filename + "_error")
+	infoWriter := getWriter(filename+"_info", options...)
+	errorWriter := getWriter(filename+"_error", options...)
 
 	core := zapcore.NewTee(
 		zapcore.NewCore(encoder, zapcore.AddSync(infoWriter), infoLevel),
