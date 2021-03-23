@@ -4,7 +4,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/artisan-yp/go-rotatefiles"
+	"github.com/k8s-practice/go-rotatefiles"
 
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"

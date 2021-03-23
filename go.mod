@@ -1,8 +1,8 @@
-module github.com/artisan-yp/go-rotatablezap
+module github.com/k8s-practice/go-rotatablezap
 
-go 1.15
+go 1.16
 
 require (
-	github.com/artisan-yp/go-rotatefiles v1.0.3
-	go.uber.org/zap v1.16.0
+	github.com/k8s-practice/go-rotatefiles v1.0.5
+	go.uber.org/zap v1.16.0 // indirect
 )
